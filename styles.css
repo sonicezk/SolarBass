@@ -3,10 +3,17 @@
   padding: 0;
 }
 
-body {
+.indexbody {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
+  line-height: 1.6;
+  text-align: center;
+}
+.mainbody {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color:white;
   line-height: 1.6;
   text-align: center;
 }
@@ -82,24 +89,111 @@ body {
 
 .btn:hover {
   transform: rotateY(360deg);
-  color: gray;
-  border: gray 1px solid;
+  color: red;
+  border: red 1px solid;
 }
 
 #headerlogo {
   size: 100px;
   margin: auto;
 }
+
 .image {
   width: 11rem;
   height: 11rem;
   border: solid black 1px;
-  background-color:white;
+  background-color: white;
   border-radius: 12rem;
 }
-.mainbanner {
-  margin:auto;
-  position:relative;
+
+.linksbar {
+  display: flex;
+  position: relative;
+  margin:0;
+}
+.linkhome {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: white 1px solid;
+  margin-top: 0;
+  transition-property: color, border;
+  transition-duration: 1s;
+}
+.linkhome:hover {
+  color:red;
+  border: red 1px solid;
+}
+#linkshome1 {
+  order: 1;
+  width: 33%;
+}
+#linkshome2 {
+  order: 2;
+  width: 33%;
+}
+#linkshome3 {
+  order: 3;
+  width: 33%;
+}
+#bassbanner {
+  width: 100%;
+  height: 100%;
   max-height: 300px;
-  max-width: 1200px;
+  border-bottom: 1px solid white;
+}
+.columns {
+  display: flex;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+.maincolumn {
+  flex: 3;
+  order: 1;
+}
+.mch1 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.sidebarcolumn {
+  flex: 1;
+  order: 2;
+}
+.sidebarlogo {
+  height: 8rem;
+  width: 8rem;
+  border: black 1px solid;
+  border-radius: 9rem;
+}
+.coloredboxes {
+  display: flex;
+  margin-top: 200px;
+}
+.boxes {
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px;
+  width: 50%;
+}
+.boxes:nth-child(1) {
+  background-color:#EE760B;
+}
+.boxes:nth-child(2) {
+  background-color:red;
+}
+.boxlink {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: white 1px solid;
+  margin-top: 0;
+  transition-property: color, border;
+  transition-duration: 1s;
+}
+.boxlink:hover {
+    color: black;
+  border: black 1px solid;
 }
