@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Main Page</title>
+</head>
+
+<body class="mainbody">
+  <header>
+    <div class="mainbanner">
+      <img id="bassbanner" src="https://raw.githubusercontent.com/sonicezk/SolarBass/master/images/siBanner2.JPG" alt="Bass banner">
+    </div>
+  </header>
+  <div class="linksbar">
+    <a class="linkhome" id="linkshome1" href="main.html">Home</a>
+    <a class="linkhome" id="linkshome2" href="contactus.html">Contact Us</a>
+    <a class="linkhome" id="linkshome3" href="#">Products & Services</a>
+  </div>
+  <div class="columns">
+    <div class="maincolumn">
+      <h2>Location</h2>
+      <p>3350 Harbor Lane N
+        <br> Plymouth, Minnesota 55447</p>
+      <p><b>Phone:</b> 373-481-6854
+        <b>Email:</b> info@solarbass.com</p>
+    </div>
+    <div class="sidebarcolumn">
+      <h2>Hours of Operation</h2>
+      <p><b>Mon-Fri:</b> 10AM - 5PM</p>
+      <p><b>Sat:</b> 12:00PM - 5PM</p>
+    </div>
+  </div>
+  <div id="map">test</div>
+  <div class="coloredboxes">
+    <div class="boxes">
+      <h4>Fender Jaguar Price Drop!</h4>
+      <p>The infamous Fender Jaguar has changed from $199.99 to $174.99 for a limited time offer! Buy now while they last!</p>
+      <a class="boxlink" href="#">Learn More</a>
+    </div>
+
+    <div class="boxes">
+      <h4>Buy 3 TEC pedals for $120!</h4>
+      <p>TEC pedals has an offer you can't refuse. Buy 3 guitar pedals of your choice for $120 total!</p>
+      <a class="boxlink" href="#">Learn More</a>
+    </div>
+  </div>
+  <script>
+    function initMap() {
+      var uluru = {
+        lat: 45.0176076,
+        lng: -93.4650064
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcNHGC3dH7-NkvkfABnODhT_teQQghCKY&callback=initMap">
+  </script>
+</body>
+
+</html>
