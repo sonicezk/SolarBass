@@ -10,10 +10,11 @@
   line-height: 1.6;
   text-align: center;
 }
+
 .mainbody {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
-  color:white;
+  color: white;
   line-height: 1.6;
   text-align: center;
 }
@@ -109,8 +110,10 @@
 .linksbar {
   display: flex;
   position: relative;
-  margin:0;
+  margin: 0;
+  padding-bottom: 10px;
 }
+
 .linkhome {
   display: inline-block;
   color: white;
@@ -121,74 +124,96 @@
   transition-property: border-radius, background-color, color, border;
   transition-duration: 2s, 1s, 1s;
 }
+
 .linkhome:hover {
-  background-color:#EE670F;
+  background-color: #EE670F;
   border-radius: 75%;
   color: black;
   border: 1px solid black;
+}
+
+.linksbar a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
 }
 
 #linkshome1 {
   order: 1;
   width: 33%;
 }
+
 #linkshome2 {
   order: 2;
   width: 33%;
 }
+
 #linkshome3 {
   order: 3;
   width: 33%;
 }
+
 #bassbanner {
   width: 100%;
   height: 100%;
   max-height: 300px;
   border-bottom: 1px solid white;
 }
+
 .columns {
   display: flex;
-  color:black;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   text-align: center;
   margin: 10px;
-  background-color:white;
+  background-color: white;
+  padding-bottom: 10px;
 }
+
 .maincolumn {
   flex: 3;
   order: 1;
 }
+
 .mch1 {
   font-family: Helvetica, Arial, sans-serif;
 }
+
 .sidebarcolumn {
   flex: 1;
   order: 2;
   margin-left: 20px;
 }
+
 .sidebarlogo {
   height: 8rem;
   width: 8rem;
   border: black 1px solid;
   border-radius: 9rem;
 }
+
 .coloredboxes {
   display: flex;
   margin-top: 200px;
 }
+
 .boxes {
   padding: 20px;
   box-sizing: border-box;
   margin: 20px;
   width: 50%;
 }
+
 .boxes:nth-child(1) {
-  background-color:#EE760B;
+  background-color: #EE760B;
 }
+
 .boxes:nth-child(2) {
-  background-color:red;
+  background-color: red;
 }
+
 .boxlink {
   display: inline-block;
   color: white;
@@ -199,7 +224,13 @@
   transition-property: color, border;
   transition-duration: 1s;
 }
+
 .boxlink:hover {
   color: black;
   border: black 1px solid;
+}
+#map {
+  height: 400px;
+  width: 100%;
+  margin: 20px;
 }
