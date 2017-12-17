@@ -19,8 +19,9 @@
   </div>
   <div class="columns">
     <div class="maincolumn">
-      <h1 class="mch1">Welcome to Solar Bass!</h1> Solar Bass makes bass guitars for all people. From your typical four-string bass to our very own six-strings, we've got a large variety of instruments. In addition to our own branding, we also sell popular brands, such as Fender, Gibson, and many
-      more. Come stop on by today and check out our instruments!
+      <h1 class="mch1">Welcome to Solar Bass!</h1> 
+      <p id="maintext">Solar Bass makes bass guitars for all people. From your typical four-string bass to our very own six-strings, we've got a large variety of instruments. In addition to our own branding, we also sell popular brands, such as Fender, Gibson, and many
+      more. Come stop on by today and check out our instruments!</p>
     </div>
     <div class="sidebarcolumn">
       <img class="sidebarlogo" src="https://raw.githubusercontent.com/sonicezk/SolarBass/master/images/onlinelogomaker-102317-2242-7507%20(1).png" alt="Solar Bass Logo">
@@ -31,7 +32,8 @@
       </ul>
     </div>
   </div>
-  <div class="coloredboxes">
+  <button id="hidebutton" onClick="hideOffers()">Hide Offers</button>
+  <div id="specialoffers" class="coloredboxes">
     <div class="boxes">
       <h4>Fender Jaguar Price Drop!</h4>
       <p>The infamous Fender Jaguar has changed from $199.99 to $174.99 for a limited time offer! Buy now while they last!</p>
@@ -41,9 +43,19 @@
     <div class="boxes">
       <h4>Buy 3 TEC pedals for $120!</h4>
       <p>TEC pedals has an offer you can't refuse. Buy 3 guitar pedals of your choice for $120 total!</p>
-    <a class="boxlink" href="#">Learn More</a>
+      <a class="boxlink" href="#">Learn More</a>
     </div>
   </div>
+  
+  <script>
+    function hideOffers() {
+      var x = document.getElementById("specialoffers");
+      var y = document.getElementById("hidebutton");
+      x.style.display = "none";
+      y.style.display = "none";
+    }
+  </script>
+  
 </body>
 
 </html>
