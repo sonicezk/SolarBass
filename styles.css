@@ -115,12 +115,12 @@
 }
 
 .linkhome {
-  display: inline-block, flex;
+  display: inline-block;
   color: white;
   text-decoration: none;
   padding: 1rem 2rem;
   border: white 1px solid;
-  margin: 0, 10px;
+  margin: 0 10px;
   transition-property: border-radius, background-color, color, border;
   transition-duration: 2s, 1s, 1s;
 }
@@ -187,6 +187,9 @@ a:active {
   margin-left: 20px;
   text-align: center;
 }
+#maintext {
+  padding: 40px auto;
+}
 
 .sidebarlogo {
   height: 8rem;
@@ -231,8 +234,17 @@ a:active {
   color: black;
   border: black 1px solid;
 }
+
 #map {
   height: 400px;
   width: 100%;
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+button {
+  background-color: #EE760B;
+  color: white;
+  width: 5rem;
+  height: 2rem;
 }
